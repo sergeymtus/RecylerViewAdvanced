@@ -106,7 +106,9 @@ class PostViewHolder(
                         .load("http://10.0.2.2:9999/media/${post.attachment?.url}")
                         .timeout(10_000)
                         .into(viewForImage)
-                }
+
+
+                }  null -> throw IllegalArgumentException("unknown item type")
             }
             viewForImage.isVisible = post.attachment?.type == AttachmentType.IMAGE
 

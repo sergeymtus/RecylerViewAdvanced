@@ -2,7 +2,7 @@ package ru.netology.nmedia.dao
 
 
 import androidx.room.*
-import androidx.room.OnConflictStrategy.REPLACE
+import androidx.room.OnConflictStrategy.Companion.REPLACE
 import ru.netology.nmedia.entity.DraftEntity
 import kotlinx.coroutines.flow.Flow
 import ru.netology.nmedia.dto.AttachmentType
